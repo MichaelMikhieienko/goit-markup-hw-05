@@ -103,15 +103,35 @@ p {
 
 .header-item {
   margin-right: 40px;
+  
 }
 .header-item:last-child {
   margin-right: 0;
 }
 
+.header-link{
+  position: relative;
+  padding-bottom: 24px;
+}
+.header-link.corrent::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-ocean);
+  }
+
+   
 .header-link:hover,
-.header-link:focus .header-link:active {
+.header-link:focus,
+.header-link:active{
   color: var(--color-ocean);
 }
+
+
 
 .header-contacts-list {
   display: flex;
