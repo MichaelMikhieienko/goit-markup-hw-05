@@ -13,6 +13,9 @@
   --color-bg-hero: rgba(46, 47, 66, 0.7);
   --color-social-media: rgba(255, 255, 255, 0.1);
   --color-clients: #afb1b8;
+  --color-backdrop: rgba(46, 47, 66, 0.4);
+  --color-modal: #fcfcfc;
+  --cilir-modal-btn: rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -551,3 +554,43 @@ p {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+/*
+Modal window
+*/
+
+.backdpop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-backdrop)
+}
+
+.modal {
+  position: absolute;
+  top: calc(50% - 288px);
+  left: calk(50% - 202px);
+
+
+  width: 408px;
+  min-height: 576px;
+  background-color: var(--color-modal);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-btn {
+  box-sizing: border-box;
+position: absolute;
+top: 24px;
+right: 24px;
+
+width: 24px;
+height: 24px;
+background: #E7E9FC;
+border: 1px solid var(--cilir-modal-btn);
+}
+.modal-icon {
+}
+
