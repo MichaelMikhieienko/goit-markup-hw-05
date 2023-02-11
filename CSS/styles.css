@@ -278,6 +278,26 @@ p {
   column-gap: 24px;
   row-gap: 48px;
 }
+.concepts-item.img::after{
+  content: '';
+  position: absolute;
+  width: 360px;
+  height: 300px;
+  
+  top: 0px;
+  left: 388px;  
+  display: block;
+  background: #4D5AE5;
+  transform: translateY(315px);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  }
+  .concepts-item.img:hover::after{
+    transform: translateY(315px);
+  
+  }
 .concepts-item {
   width: 360px;
   margin: 0;
