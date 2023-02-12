@@ -75,6 +75,7 @@ p {
   border-bottom: 1px solid #e7e9fc;
 }
 
+
 .header-logo {
   font-family: 'Raleway';
   font-style: normal;
@@ -115,7 +116,7 @@ p {
 
 .header-link {
   position: relative;
-  padding-bottom: 24px;
+  padding-bottom: 28px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -204,32 +205,28 @@ p {
   cursor: pointer;
 
   padding: 12px 24px;
-  transition-property: color, background-color;
+  transition-property: color, box-shadow, background-color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-port {
   margin-right: 24px;
-  transition-property: box-shadow, border-radius;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .button-port:last-child {
   margin-right: 0;
 }
 
-.button-port:hover,
-.button-port:focus .button-port:active {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
 
 .main-button:hover,
 .main-button:focus,
 .main-button:active {
   background-color: var(--color-ocean);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-color: var(--color-ocean);
+  
 }
 
 .title {
@@ -400,6 +397,9 @@ p {
 .footer-soc-media-text {
   color: var(--color-cornflower);
   margin-bottom: 16px;
+  font-weight: 500;
+  font-style: normal;
+  
 }
 
 .footer-container {
@@ -623,6 +623,8 @@ Modal window
   height: 100%;
 
   background-color: var(--color-backdrop);
+  opacity: 1;
+  transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdpop.is-hidden {
@@ -635,7 +637,7 @@ Modal window
   position: absolute;
   top: calc(50% - 288px);
   left: calc(50% - 202px);
-
+  
   width: 408px;
   min-height: 576px;
   background-color: var(--color-modal);
